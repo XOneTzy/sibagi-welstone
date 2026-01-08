@@ -1,20 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Redirect</title>
-<script>
-const params = new URLSearchParams(window.location.search);
+<title>Sibagi Milestone & Leaderboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-if (params.has('milestone')) {
-    window.location.href = "https://sibagi.com/stream/milestone?id=69191c4e407c781c203836c7";
+<style>
+body{
+    margin:0;
+    background:#0b1020;
+    font-family:Arial, sans-serif;
+    color:#fff;
 }
-else if (params.has('leaderboard')) {
-    window.location.href = "https://sibagi.com/stream/leaderboard?id=69191c4e407c781c203836c7";
+.container{
+    display:flex;
+    flex-direction:column;
+    height:100vh;
 }
-</script>
+.header{
+    text-align:center;
+    padding:10px;
+    background:#020617;
+    font-weight:bold;
+}
+.label{
+    background:#020617;
+    padding:6px;
+    text-align:center;
+    font-size:14px;
+}
+iframe{
+    border:none;
+    width:100%;
+    flex:1;
+}
+</style>
 </head>
+
 <body>
-Redirecting...
+<div class="container">
+    <div class="header">🎁 Sibagi Support</div>
+
+    <div class="label">🎯 Milestone</div>
+    <iframe src="https://sibagi.com/stream/milestone?id=69191c4e407c781c203836c7"></iframe>
+
+    <div class="label">🏆 Leaderboard</div>
+    <iframe src="https://sibagi.com/stream/leaderboard?id=69191c4e407c781c203836c7"></iframe>
+</div>
 </body>
 </html>
