@@ -2,50 +2,45 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Sibagi Milestone & Leaderboard</title>
+<title>Sibagi Overlay</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{
+html, body {
     margin:0;
-    background:#0b1020;
-    font-family:Arial, sans-serif;
-    color:#fff;
+    padding:0;
+    background: transparent;
+    overflow: hidden;
 }
 .container{
     display:flex;
     flex-direction:column;
     height:100vh;
-}
-.header{
-    text-align:center;
-    padding:10px;
-    background:#020617;
-    font-weight:bold;
+    gap:6px;
 }
 .label{
-    background:#020617;
-    padding:6px;
-    text-align:center;
+    font-family:Arial, sans-serif;
     font-size:14px;
+    color:white;
+    text-shadow:0 0 5px black;
+    padding-left:6px;
 }
 iframe{
     border:none;
     width:100%;
     flex:1;
+    background: transparent;
 }
 </style>
 </head>
 
 <body>
 <div class="container">
-    <div class="header">🎁 Sibagi Support</div>
 
-    <div class="label">🎯 Milestone</div>
     <iframe src="https://sibagi.com/stream/milestone?id=69191c4e407c781c203836c7"></iframe>
 
-    <div class="label">🏆 Leaderboard</div>
     <iframe src="https://sibagi.com/stream/leaderboard?id=69191c4e407c781c203836c7"></iframe>
+
 </div>
 </body>
 </html>
